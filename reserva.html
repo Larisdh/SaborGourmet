@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reserva.css">
+
+    <title>Sabor Gourmet</title>
+
+<body>
+    </head>
+
+    <header>
+        <div class="cabecalho">
+            <div class="logo">
+                <img src="img/logo ok.png" class="sorv">
+                <div class="titulo">
+                    <h1>SABOR VERÃO</h1>
+
+                    <div class="sub">
+                    <h2> Sorvete que une corações!</h2>
+                  </div>
+                  
+                </div>
+
+            </div>
+
+
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li><a href="inicio.html">Ínicio</a></li>
+                    <li><a href="cardapio.html">Cardápio</a></li>
+                    <li><a href="reserva.html">Reservas</a></li>
+                    <li><a href="contatos.html">Contatos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+        <main>
+            <div class="container">
+                <h3>Faça sua reserva</h3>
+                <form action="#" method="POST" id="formReserva">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+        
+                    <label for="dataHora">Data e Hora:</label>
+                    <input type="datetime-local" id="dataHora" name="dataHora" required>
+        
+                    <label for="numPessoas">Número de Pessoas:</label>
+                    <input type="number" id="numPessoas" name="numPessoas" required min="1" placeholder="Número de pessoas">
+        
+                    <label for="preferencias">Preferências Especiais:</label>
+                    <textarea id="preferencias" name="preferencias" rows="4" placeholder="Se houver alguma preferência, digite aqui"></textarea>
+        
+                    <button type="submit">Enviar Reserva</button>
+                </form>
+            </div>
+        
+            <script>
+                // Validação do formulário
+                document.getElementById('formReserva').addEventListener('submit', function(event) {
+                    const nome = document.getElementById('nome').value;
+                    const dataHora = document.getElementById('dataHora').value;
+                    const numPessoas = document.getElementById('numPessoas').value;
+        
+                    if (!nome || !dataHora || !numPessoas) {
+                        alert('Por favor, preencha todos os campos obrigatórios!');
+                        event.preventDefault(); // Impede o envio do formulário
+                    } else {
+                        alert('Reserva enviada com sucesso!');
+                    }
+                });
+            </script>
+        </body>
+        </html>
+        </main>
+    </header>

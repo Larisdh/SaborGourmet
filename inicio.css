@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-image: url('img/fundo\ okok.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+}
+
+h2 {
+font-family: cursive;
+    color: rgb(233, 233, 233);
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+
+}
+.text{
+    display: flex;
+    justify-content: right;
+   height: 25px;
+   flex-direction: column;
+
+  
+
+   
+}
+header {
+    background-color: #8d2138;
+    padding: 20px 20px;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Logo à esquerda, menu à direita */
+    align-items: flex-end;
+    padding: 15px 30px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 20px; /* Espaçamento entre os itens do menu */
+    list-style: none;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+img {
+    width: 140px;
+    height: auto;
+    border-radius: 100px;
+}
+
+.button{
+    margin: 15px;    
+    padding-top: 20px;
+    width: 500px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.button1{
+    margin: 15px;    
+    padding-top: 10px;
+    width: 500px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.button2{
+    margin: 15px;    
+    padding-top: 10px;
+    width: 500px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.map {
+  display: flex;
+  justify-content: flex-end;
+  margin: 80px;
+  margin-top: 0%;
+}
+
+
+ 
+
